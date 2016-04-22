@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES5",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"outDir": "./build",
+		"sourceMap": true
+	},
+	"exclude": [
+		"node_modules",
+		"typings/main",
+		"typings/main.d.ts"
+	],
+	"filesGrob": [
+		"typings/browser.d.ts"
+	]
+}
