@@ -1,0 +1,16 @@
+{
+  "name": "simple-todo",
+  "version": "1.0.0",
+  "description": "simple-todo with node.js and angular2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asukaleido/simple-todo.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asukaleido/simple-todo/issues"
+  }
+}
