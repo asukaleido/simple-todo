@@ -10,7 +10,7 @@
     "preclean:install": "npm run clean",
     "clean:install": "npm install",
     "install:typings": "typings install",
-    "postinstall": "npm run install:typings",
+    "postinstall": "npm run install:typings && npm run server:build",
     "server:build-typescript": "tsc --project ./",
     "preserver:build": "rm -rf build",
     "server:build": "npm run server:build-typescript",
