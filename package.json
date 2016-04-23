@@ -1,0 +1,35 @@
+{
+  "name": "simple-todo",
+  "version": "1.0.0",
+  "description": "simple-todo with node.js and angular2",
+  "scripts": {
+    "clean:node_modules": "rm -rf node_modules",
+    "clean:typings": "rm -rf typings",
+    "clean": "npm cache clean",
+    "postclean": "npm run clean:node_modules && npm run clean:typings",
+    "preclean:install": "npm run clean",
+    "clean:install": "npm install",
+    "install:typings": "typings install",
+    "postinstall": "npm run install:typings && npm run server:build",
+    "server:build-typescript": "tsc --project ./",
+    "preserver:build": "rm -rf build",
+    "server:build": "npm run server:build-typescript",
+    "preserver": "npm run server:build",
+    "server": "node build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asukaleido/simple-todo.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asukaleido/simple-todo/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "pug": "^2.0.0-alpha6",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}
