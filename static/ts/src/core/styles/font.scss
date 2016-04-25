@@ -1,0 +1,14 @@
+@mixin font($font-size:12px) {
+	font-size: $font-size;
+	font-family:
+		Open Sans,
+		meiryo,
+		'ヒラギノ角ゴ Pro W3',
+		'Hiragino Kaku Gothic Pro',
+		'メイリオ',
+		Meiryo,
+		arial,
+		helvetica,
+		clean,
+		sans-serif;
+}

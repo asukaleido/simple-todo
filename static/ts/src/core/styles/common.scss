@@ -1,0 +1,25 @@
+@import "lib/compass";
+@import "./variables";
+@import "./font";
+
+@mixin clearfix {
+	*zoom: 1;
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin offsetScreen {
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+}
+
+@mixin _transition($duration:0.05s){
+	@include transition-property(all);
+	@include transition-duration($duration);
+}
