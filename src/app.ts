@@ -7,6 +7,7 @@ export class App {
 	constructor() {
 		this.app = e();
 		this.initViewEngile();
+		this.initStaticPath();
 		this.dispatch();
 	}
 
@@ -17,6 +18,10 @@ export class App {
 	initViewEngile() {
 		this.app.set('view engine', 'pug');
 		this.app.set('views', process.cwd());
+	}
+
+	initStaticPath() {
+		this.app.use(e.static(`${process.cwd()}/static`));
 	}
 
 	dispatch() {

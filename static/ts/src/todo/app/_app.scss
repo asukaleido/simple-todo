@@ -1,0 +1,14 @@
+@import "todo/styles/common";
+
+html {
+	overflow: hidden;
+}
+body {
+	@include font;
+	background: $todo-bg-color;
+	margin: 0;
+}
+
+app {
+	display: block;
+}
