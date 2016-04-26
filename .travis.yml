@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - '5.10.1'
+
+branches:
+  only:
+  - master
+  - develop
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: F66mpqL+glfI/uOPIAS62o0afn4YMEeXNV4sEx4Ksw6ZGYm0J0ihMPbLvRuOl3fzifnCMqld2zEj3yiHYFwT/dBXoDV8H9/w4fUfSTU3wTRcYOmC32H+2oi37shV9tVAXebkWrs9V7QX15pbKCXAbw/pAqZY+Sbhub0zzLAvAhhHViBMF/bQdOKK3hoVQlNtZf3LX1w3+drieF+1vDFjv8ibDsH7ErL1bW1R3/Hpkp58zeNwZMIC6/Ckl/XImYDJ+XhTVWbNbk621XCfyw1TZzBBwCQo/F1w+56xxT+CtHrcKth5gg16HcKEY1yXeTccEeMcLg5n6MJdOwcntjHTI0/gXotLUV1kkXXgGeLW+2nNkMZyTUNMvpurqet1TnPToJ3BpoaTm8/c6LqIiqg4VPiHDqe77LmyxZhizgNZQLYyYYiIg4/ecM13Lrx/4VTkxYZ8rZSRbWvMM72xbDxqCVSkiJeYrCZlh0+oI+jjCw5Oe7JdBvK8BFlHgD4Xw0D/iJWTk1+/buKHMUd821jsFNMeAOD1BgvsDXlWPPHOfvW2Xo70yVxlSq/agDH2XeeS6hJhnOe7poKizgz2Vek9fXPn6+WdHUjj6jmGDyyIQ5wMxp/C+p8kI4Ln+jwAE0TJIWmta2iT2EA31fFCZuxEFG/pvtQMzZWYzOpKyUEKbGw=
+  app: asukaleido-simple-todo
+  on:
+    repo: asukaleido/simple-todo
+    branch: master
