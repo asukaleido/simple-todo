@@ -1,7 +1,8 @@
 import {enableProdMode, provide} from 'angular2/core';
 import {bootstrap, ELEMENT_PROBE_PROVIDERS}    from 'angular2/platform/browser';
+import {APP_BASE_HREF} from 'angular2/platform/common';
 import {HTTP_PROVIDERS} from 'angular2/http';
-import {ROUTER_PROVIDERS, APP_BASE_HREF} from 'angular2/router';
+import {ROUTER_PROVIDERS} from 'angular2/router';
 
 const ENV_PROVIDERS: Array<any> = [];
 

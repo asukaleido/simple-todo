@@ -21,6 +21,7 @@ module.exports = function(config) {
 			dir : 'coverage/',
 			subdir: '.',
 			reporters: [
+				{type: 'text-summary'},
 				{type: 'json'},
 				{type: 'html'}
 			]

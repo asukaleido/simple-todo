@@ -1,9 +1,9 @@
 import {
+	async,
 	beforeEach,
 	ComponentFixture,
 	expect,
 	inject,
-	injectAsync,
 	it,
 	TestComponentBuilder
 } from 'angular2/testing';
@@ -18,12 +18,11 @@ describe('todo.App', () => {
 		builder = tcb;
 	}));
 
-	it('can be an instance', injectAsync([], () => {
-		return builder
-			.createAsync(App)
+	it('can be an instance', async(() => {
+		builder.createAsync(App)
 			.then((fixture: ComponentFixture) => {
 				fixture.detectChanges();
-			expect(fixture.componentInstance).toBeAnInstanceOf(App);
+				expect(fixture.componentInstance).toBeAnInstanceOf(App);
 			});
 	}));
 });
