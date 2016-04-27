@@ -8,7 +8,7 @@ import {
 	TestComponentBuilder
 } from 'angular2/testing';
 
-import {App} from '../App';
+import {App} from '../app';
 
 describe('todo.App', () => {
 
