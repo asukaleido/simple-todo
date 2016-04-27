@@ -3,6 +3,7 @@
   "dependencies": {},
   "ambientDependencies": {
     "core-js": "registry:dt/core-js#0.0.0+20160317120654",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160412134438",
     "webpack-env": "registry:dt/webpack-env#1.12.2+20160316155526"
   }
 }
