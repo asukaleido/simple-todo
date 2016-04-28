@@ -1,7 +1,22 @@
 @import "todo/styles/common";
 
 :host {
+	position: relative;
 	display: block;
 	background: $todo-bg-color;
 	@include font;
+}
+
+$navi-size: 300px;
+
+.navi {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: $navi-size;
+}
+
+.contents {
+	position: relative;
+	padding-left: $navi-size;
 }

@@ -1,5 +1,5 @@
 import {
-	Component, ElementRef, HostListener, Injectable, Renderer,
+	Component, ElementRef, HostListener, Injectable, Renderer, ViewChild,
 } from 'angular2/core';
 import {config} from 'src/core/config';
 
@@ -12,17 +12,25 @@ import {config} from 'src/core/config';
 @Injectable()
 export class App {
 
+	@ViewChild('navi')
+	navi: ElementRef;
+
+	@ViewChild('contents')
+	contents: ElementRef;
+
 	constructor(
 		public element: ElementRef,
 		public renderer: Renderer
 	) {}
 
-	ngOnInit(): void {
+	ngAfterViewInit(): void {
 		this.resize(window);
 	}
 
 	@HostListener('window:resize', ['$event.target'])
 	resize(w: Window): void {
-		this.renderer.setElementStyle(this.element.nativeElement, 'height', w.innerHeight + 'px');
+		[this.navi, this.contents].forEach((element: ElementRef) => {
+			this.renderer.setElementStyle(element.nativeElement, 'height', w.innerHeight + 'px');
+		});
 	}
 }
