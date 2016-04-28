@@ -47,7 +47,7 @@ module.exports = {
 	},
 
 	sassLoader: {
-		outputStyle: 'nested',
+		outputStyle: 'compressed',
 		includePaths: [
 			`${ROOT}/src`,
 			`${common.BASE_PATH}/node_modules/compass-mixins`,

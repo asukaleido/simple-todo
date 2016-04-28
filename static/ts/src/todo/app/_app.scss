@@ -1,14 +1,7 @@
 @import "todo/styles/common";
 
-html {
-	overflow: hidden;
-}
-body {
-	@include font;
-	background: $todo-bg-color;
-	margin: 0;
-}
-
-app {
+:host {
 	display: block;
+	background: $todo-bg-color;
+	@include font;
 }

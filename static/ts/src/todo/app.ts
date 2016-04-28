@@ -1,12 +1,13 @@
 import {
-	Component, ElementRef, HostListener, Injectable, Renderer, ViewEncapsulation,
+	Component, ElementRef, HostListener, Injectable, Renderer,
 } from 'angular2/core';
+import {config} from 'src/core/config';
 
 @Component({
 	selector: 'app',
 	template: require<string>('./app/_app.html'),
 	styles: [require<string>('./app/_app.scss')],
-	encapsulation: ViewEncapsulation.None,
+	encapsulation: config.encapsulation,
 })
 @Injectable()
 export class App {
