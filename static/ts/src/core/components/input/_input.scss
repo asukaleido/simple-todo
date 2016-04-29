@@ -1,0 +1,42 @@
+@import "core/styles/common";
+
+$ui-input-text-color: $navy-black-00;
+$ui-input-border-color-focus: $blue-01;
+
+:host {
+	position: relative;
+	display: inline-block;
+	line-height: normal;
+}
+
+input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px 8px 7px;
+	border: solid 1px transparent;
+	margin: 0;
+	vertical-align: middle;
+	background: transparent;
+	@include font;
+	font-size: 13px;
+	font-weight: bold;
+	color: $ui-input-text-color;
+
+	&:focus {
+		outline: none;
+		border: solid 1px $ui-input-border-color-focus;
+	}
+
+	&:placeholder-shown {
+		font-weight: normal;
+	}
+	&::-webkit-input-placeholder {
+		font-weight: normal;
+	}
+	&:-moz-placeholder {
+		font-weight: normal;
+	}
+	&:-ms-input-placeholder {
+		font-weight: normal;
+	}
+}
