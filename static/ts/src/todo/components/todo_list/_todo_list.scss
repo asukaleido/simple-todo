@@ -1,0 +1,16 @@
+@import "todo/styles/common";
+
+:host {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	left: 0;
+	display: block;
+	background: $ui-white-color;
+	width: 500px;
+	margin: 0 auto;
+}
+
+ui-input {
+	width: 100%;
+}

@@ -2,11 +2,13 @@ import {
 	Component, ElementRef, HostListener, Injectable, Renderer, ViewChild,
 } from 'angular2/core';
 import {config} from 'src/core/config';
+import {TodoList} from 'src/todo/components';
 
 @Component({
 	selector: 'app',
 	template: require<string>('./app/_app.html'),
 	styles: [require<string>('./app/_app.scss')],
+	directives: [TodoList],
 	encapsulation: config.encapsulation,
 })
 @Injectable()
