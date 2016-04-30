@@ -19,6 +19,10 @@ testing.setBaseTestProviders(
 
 Object.assign(global, testing);
 
+var config = require('src/core/config').config;
+var ViewEncapsulation = require('angular2/core').ViewEncapsulation;
+config.encapsulation = ViewEncapsulation.Emulated;
+
 var testContext = require.context('../src', true, /\.spec\.ts/);
 
 function requireAll(requireContext) {
