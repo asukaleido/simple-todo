@@ -1,14 +1,22 @@
 @import "todo/styles/common";
 
-html {
-	overflow: hidden;
-}
-body {
-	@include font;
+:host {
+	position: relative;
+	display: block;
 	background: $todo-bg-color;
-	margin: 0;
+	@include font;
 }
 
-app {
-	display: block;
+$navi-size: 300px;
+
+.navi {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: $navi-size;
+}
+
+.contents {
+	position: relative;
+	margin-left: $navi-size;
 }

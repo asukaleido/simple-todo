@@ -1,0 +1,2 @@
+<todo-item *ngFor="let todo of todos" [todo]="todo" (blank)="delete($event)"></todo-item>
+<ui-input [placeholder]="'Type todo and press Enter to add.'" (enter)="inputEnter($event)"></ui-input>

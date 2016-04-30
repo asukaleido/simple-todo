@@ -1,0 +1,2 @@
+<div class="subject" [class.hidden]="edit === true">{{todo.subject}}</div>
+<ui-input [class.hidden]="edit === false" [(value)]="todo.subject" (enter)="input.blur()" (blur)="changeMode(false)"></ui-input>

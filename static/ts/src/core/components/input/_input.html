@@ -1,0 +1,2 @@
+<input #input [attr.type]="type" [attr.placeholder]="placeholder" [(ngModel)]="value" (keydown)="(keydown($event))" (focus)="_onFocus($event)" (blur)="_onBlur($event)" />
+<ng-content></ng-content>

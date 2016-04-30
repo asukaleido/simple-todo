@@ -1,0 +1,30 @@
+@import "todo/styles/common";
+
+$ui-input-text-color: $navy-black-00;
+
+:host {
+	position: relative;
+	display: block;
+	background: transparent;
+}
+
+.subject {
+	line-height: normal;
+	padding: 8px 8px 7px;
+	border: solid 1px transparent;
+	font-size: 13px;
+	font-weight: bold;
+	color: $ui-input-text-color;
+
+	&.hidden {
+		display: none;
+	}
+}
+
+ui-input {
+	width: 100%;
+
+	&.hidden {
+		display: none;
+	}
+}
