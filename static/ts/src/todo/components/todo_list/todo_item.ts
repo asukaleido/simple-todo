@@ -1,6 +1,6 @@
 import {
 	Component, EventEmitter, HostListener, Input, Output, ViewChild,
-} from 'angular2/core';
+} from '@angular/core';
 import {config} from 'src/core/config';
 import {UiInput} from 'src/core/components';
 import {TodoModel} from 'src/todo/models';
