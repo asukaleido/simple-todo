@@ -1,7 +1,7 @@
 import {
 	Component, ElementRef, EventEmitter, Input, Output, Renderer, ViewChild
-} from 'angular2/core';
-import {isBlank} from 'angular2/src/facade/lang';
+} from '@angular/core';
+import {isBlank} from '@angular/common/src/facade/lang';
 import {config} from 'src/core/config';
 
 @Component({
