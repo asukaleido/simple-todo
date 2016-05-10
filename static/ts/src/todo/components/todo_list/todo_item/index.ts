@@ -7,8 +7,8 @@ import {TodoModel} from 'src/todo/models';
 
 @Component({
 	selector: 'todo-item',
-	template: require<string>('./todo_item/_todo_item.html'),
-	styles: [require<string>('./todo_item/_todo_item.scss')],
+	template: require<string>('./_todo_item.html'),
+	styles: [require<string>('./_todo_item.scss')],
 	directives: [UiInput],
 	encapsulation: config.encapsulation,
 })

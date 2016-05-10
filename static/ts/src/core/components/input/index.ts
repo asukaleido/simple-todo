@@ -6,8 +6,8 @@ import {config} from 'src/core/config';
 
 @Component({
 	selector: 'ui-input',
-	template: require<string>('./input/_input.html'),
-	styles: [require<string>('./input/_input.scss')],
+	template: require<string>('./_input.html'),
+	styles: [require<string>('./_input.scss')],
 	encapsulation: config.encapsulation,
 })
 export class UiInput {
