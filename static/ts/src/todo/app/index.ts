@@ -6,8 +6,8 @@ import {TodoList} from 'src/todo/components';
 
 @Component({
 	selector: 'app',
-	template: require<string>('./app/_app.html'),
-	styles: [require<string>('./app/_app.scss')],
+	template: require<string>('./_app.html'),
+	styles: [require<string>('./_app.scss')],
 	directives: [TodoList],
 	encapsulation: config.encapsulation,
 })

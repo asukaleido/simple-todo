@@ -4,12 +4,12 @@ import {
 import {config} from 'src/core/config';
 import {UiInput} from 'src/core/components';
 import {TodoModel} from 'src/todo/models';
-import {TodoItem} from './todo_list/todo_item';
+import {TodoItem} from './todo_item';
 
 @Component({
 	selector: 'todo-list',
-	template: require<string>('./todo_list/_todo_list.html'),
-	styles: [require<string>('./todo_list/_todo_list.scss')],
+	template: require<string>('./_todo_list.html'),
+	styles: [require<string>('./_todo_list.scss')],
 	directives: [TodoItem, UiInput],
 	encapsulation: config.encapsulation,
 })
